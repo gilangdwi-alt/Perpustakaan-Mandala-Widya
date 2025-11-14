@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAGA e-Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo"><img src="image/gradient-library-logo-template.png"> <span>mandalawidya</span></div> <!--dipakai untuk mengatur teks "SAGA" dan "e-Library"-->
+
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentangkami.html">tentang kami</a></li>
+        <li><a href="koleksi.html">koleksi</a></li>
+        <li><a href="layanan.html"class="active">layanan</a></li>
+        <li><a href="informasi.html">informasi</a></li>
+      </ul>
+    </nav>
+    <div class="account">
+      <button class="login-btn" onclick="bukaPopup()">Login</button>
+      <input type="text" placeholder="Search...">
+    </div>
+    <div id="popupLogin" class="popup">
+    
+  <div class="popup-content">
+    <button class="close-btn" onclick="tutupPopup()">X</button>
+    <h3>Form Login</h3>
+    <form>
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button type="submit" class="login-submit">Login</button>
+    </form>
+    <p>Belum punya akun? <a href="#">Daftar</a></p>
+  </div>
+</div>
+<script>
+    function bukaPopup() {
+      document.getElementById("popupLogin").style.display = "block";
+    }
+
+    function tutupPopup() {
+      document.getElementById("popupLogin").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const popup = document.getElementById("popupLogin");
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    }
+  </script>
+  </header>
+  <!-- BANNER -->
+  
+  <section class="banner">
+    <img src="image/slide1.jpg" alt="Perpustakaan">
+    <div class="banner-text">
+      <h1> Nikmati Layanan<br>Perpustakaan Mandala Widya</h1>
+      
+    </div>
+  
+
+  </section>
+  <!-- LAYANAN SECTION -->
+  <section class="layanan">
+    <div class="layanan-container">
+      <div class="layanan-item">
+        <img src="image/layanan_sirkulasi-removebg-preview.png" alt="Layanan Sirkulasi">
+        <h3>Layanan Sirkulasi</h3>
+      </div>
+
+      <div class="layanan-item">
+        <img src="image/layanan_referensi-removebg-preview.png" alt="Layanan Referensi">
+        <h3>Layanan Referensi</h3>
+      </div>
+
+      <div class="layanan-item">
+        <img src="image/layanan_digital-removebg-preview.png" alt="Layanan Digital">
+        <h3>Layanan Digital</h3>
+      </div>
+
+      <div class="layanan-item">
+        <img src="image/layanan_disabilitas-removebg-preview.png" alt="Layanan Disabilitas">
+        <h3>Layanan Disabilitas</h3>
+      </div>
+
+      <div class="layanan-item">
+        <img src="image/layanan_diskusi-removebg-preview.png" alt="Layanan Diskusi">
+        <h3>Layanan Diskusi</h3>
+      </div>
+
+      <div class="layanan-item">
+        <img src="image/layanan_koleksi_khusus-removebg-preview.png" alt="Layanan Koleksi Khusus">
+        <h3>Layanan Koleksi Khusus</h3>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
+
+    <!-- Footer -->
+  <footer>
+    <p>Mandala Widya – Rumah Pengetahuan, Sahabat Sepanjang Hayat</p>
+  </footer>
+</body>
+</html>
